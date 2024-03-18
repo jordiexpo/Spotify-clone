@@ -1,4 +1,4 @@
-p,h1,a{
+p,h1,a,h3,h2{
 font-family: Helvetica;
 }
 body{
@@ -58,21 +58,26 @@ color: aliceblue;
  flex-direction: column;
  text-align: center;
  margin-top: 10px;
- font-size: 18px;
- text-decoration: underline yellowgreen 4px;
- text-underline-offset: 8px ;
+}
+.text-3{
+ text-decoration: underline yellowgreen 3px;
+ text-underline-offset: 8px;
+ font-size: 20px;
 }
 .container-3 {
  display: flex;
- justify-content: center; 
- margin-top: 20px; 
+ justify-content: center;
+ align-items: flex-start; 
+ margin-top: 20px;
 }
 
-.music,.quality,.devices {
-flex: 2;
- margin: 0 10px; 
- padding: 20px; 
+.music, .quality, .devices {
+ flex: 8;
+ margin: 0 10px;
+ padding: 20px;
  text-align: center;
+ height: 100%;
+ 
 }
 .text{
  display: flex;
@@ -94,6 +99,30 @@ text-align: center;
  flex-direction: column;
  column-width: 10%;
 }
-
-
+h2{
+ text-decoration: underline;
+ text-underline-offset: 8px;
+}
+.background-2{
+ display: flex;
+background-position: center;
+height: 75vh;
+background-color: yellowgreen;
+position: absolute;
+top: 0;
+left: 0;
+width: 100vh;
+height: 100vh;
+z-index: -1;
+}
+.container-4{
+ display: block;
+ color: aliceblue;
+ position: relative;
+ z-index: 1;
+ align-items: center;
+}
+#snapshot, #app{
+ width: 100px;
+}
 
