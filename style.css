@@ -103,26 +103,39 @@ h2{
  text-decoration: underline;
  text-underline-offset: 8px;
 }
-.background-2{
- display: flex;
-background-position: center;
-height: 75vh;
-background-color: yellowgreen;
-position: absolute;
-top: 0;
-left: 0;
-width: 100vh;
-height: 100vh;
-z-index: -1;
-}
 .container-4{
- display: block;
  color: aliceblue;
- position: relative;
- z-index: 1;
- align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
 }
-#snapshot, #app{
- width: 100px;
+.background-2{
+display: flex;
+background-position: center;
+background-color: yellowgreen;
+height: 85vh;
+width: 203vh;
+margin: 25px;
+}
+
+.text-4 {
+  display: inline-block; 
+  text-align: left; 
+  width: 33%; 
+  vertical-align: top; 
+  margin: 0 10px; 
+}
+
+#white-icon {
+  display: block; 
+  align-items: center;
+  margin: 200px;
+  width: 100px;
+  height: 100px;
+}
+
+#snapshot {
+  display: block;
+  margin: 20px auto; 
 }
 
