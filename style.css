@@ -57,7 +57,6 @@ color: aliceblue;
  display: flex;
  flex-direction: column;
  text-align: center;
- margin-top: 10px;
 }
 .text-3{
  text-decoration: underline yellowgreen 3px;
@@ -66,38 +65,28 @@ color: aliceblue;
 }
 .container-3 {
  display: flex;
- justify-content: center;
- align-items: flex-start; 
- margin-top: 20px;
+ align-items: center;
 }
 
 .music, .quality, .devices {
- flex: 8;
- margin: 0 10px;
- padding: 20px;
- text-align: center;
- height: 100%;
- 
-}
-.text{
  display: flex;
-flex-direction: column;
-text-align: center;
-
+ flex-direction: column;
+ align-items: center;
+ flex: 8;
 }
 #icon {
  margin: 15px;
- width: 100px;
+ width: 33vh;
 }
+
 .green-text{
  color: yellowgreen;
- font-size: large;
+ display: flex;
 }
 .grey-text{
  color: silver;
  font-size: smaller;
- flex-direction: column;
- column-width: 10%;
+ width: 50%;
 }
 h2{
  text-decoration: underline;
@@ -121,7 +110,7 @@ margin: 25px;
 .text-4 {
   display: inline-block; 
   text-align: left; 
-  width: 33%; 
+  width: 33vw; 
   vertical-align: top; 
   margin: 0 10px; 
 }
@@ -139,3 +128,67 @@ margin: 25px;
   margin: 20px auto; 
 }
 
+@media (width < 320px){
+  
+}
+@media (320px <= width < 768px) {
+ .music, .quality, .devices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 3;
+ }
+ #icon {
+  margin: 13%;
+  width: 33vw;
+ }
+
+ .green-text{
+  color: yellowgreen;
+  display: flex;
+ }
+ .grey-text{
+  color: silver;
+  font-size: smaller;
+  width: 50%;
+ }
+ .container-4{
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ }
+ .background-2{
+ display: flex;
+ background-position: center;
+ background-color: yellowgreen;
+ height: 85vw;
+ width: 105vw;
+ margin: 10px;
+ }
+ .text-4 {
+  display: inline-block; 
+  text-align: left; 
+  width: 100vw; 
+  vertical-align: top; 
+  margin: 0 10px; 
+}
+
+#white-icon {
+  display: block; 
+  align-items: center;
+  margin: 200px;
+  width: 33vw;
+  height: 100px;
+}
+
+#snapshot {
+  display: block;
+  margin: 10px; 
+}
+
+}
+
+@media(width >= 768px){
+
+}
